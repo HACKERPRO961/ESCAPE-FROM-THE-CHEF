@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.d.outputs.page_url }}
+      url: https://hackerpro961.github.io/ESCAPE-FROM-THE-CHEF-indirme-sitesi-/
     steps:
       - uses: actions/checkout@v4
       - run: |
