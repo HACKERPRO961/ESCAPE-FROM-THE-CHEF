@@ -1,6 +1,6 @@
 # Escape From The Chef: site + Android APK
 
-Ücretsiz, reklamsız yayın. Hem oyun sitesi hem indirilebilir Android APK otomatik yapılır.
+Ücretsiz oyun; reklamlar (AdMob) ve isteğe bağlı Premium satın alma var (docs/LEADERBOARD.md). Hem oyun sitesi hem indirilebilir Android APK otomatik yapılır.
 
 ## Bir kez yapılacaklar
 1. github.com'da hesap aç (siteye kayıt olurken yaş kuralını kontrol et).
@@ -30,3 +30,6 @@ APK'ya telefonda dokun, "bilinmeyen kaynaklardan yükleme" iznini ver, kur. Bu d
 **B) Netlify / Cloudflare Pages (sürükle-bırak):** `indirme-sitesi.zip` içindeki klasörü yükle. APK'yı `downloads/escape-from-the-chef.apk` olarak koy (dosya yoksa düğme "Çok yakında" der). Başka bir APK adresi için `config.js` içindeki `apk` alanını doldur.
 
 Paylaşım önizlemesi için `index.html` içindeki `og:image` değerini tam adresle (https://siten.com/og.jpg) değiştir.
+
+
+Dünya skor tablosu için docs/LEADERBOARD.md dosyasına bak.

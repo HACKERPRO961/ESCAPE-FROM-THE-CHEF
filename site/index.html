@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Escape From The Chef — İndir</title>
-<meta name="description" content="Şefin elinden kaç! Reklamsız, ücretsiz Android oyunu. APK indir veya tarayıcıda oyna. / Free, ad-free runner. Download the APK or play in your browser.">
+<meta name="description" content="Şefin elinden kaç! Reklamsız, ücretsiz Android oyunu. APK indir. / Free, ad-free runner. Download the APK.">
 <meta name="theme-color" content="#120a1c">
 <meta property="og:title" content="Escape From The Chef">
 <meta property="og:description" content="Şefin elinden kaç! Reklamsız ve ücretsiz. / Run from the chef — free and ad-free.">
@@ -101,7 +101,6 @@ footer{padding:36px 0 110px;text-align:center;color:var(--mut);font-size:14px;bo
    <p class="lead" data-tr="Üç kulvarlı mutfakta koş, tuzaklardan kaç, altın topla ve meyve arkadaşlarını aç. Ücretsiz, reklamsız." data-en="Sprint down the three-lane kitchen, dodge the traps, collect coins and unlock your fruit friends. Free and ad-free.">Üç kulvarlı mutfakta koş, tuzaklardan kaç, altın topla ve meyve arkadaşlarını aç. Ücretsiz, reklamsız.</p>
    <div class="cta">
     <a class="btn pri" id="apk" href="#kurulum" data-tr="⬇ Android için indir (APK)" data-en="⬇ Download for Android (APK)">⬇ Android için indir (APK)</a>
-    <a class="btn sec" href="play/" data-tr="▶ Tarayıcıda oyna" data-en="▶ Play in browser">▶ Tarayıcıda oyna</a>
    </div>
    <p class="meta" id="meta"></p>
    <div class="badges">
@@ -147,7 +146,7 @@ footer{padding:36px 0 110px;text-align:center;color:var(--mut);font-size:14px;bo
   <details><summary data-tr="Gerçekten ücretsiz ve reklamsız mı?" data-en="Is it really free and ad-free?">Gerçekten ücretsiz ve reklamsız mı?</summary><p data-tr="Evet. Reklam yok, ödeme yok. Marketteki her şey oyun içi altınla alınır." data-en="Yes. No ads, no payments. Everything in the market costs in-game coins.">Evet. Reklam yok, ödeme yok. Marketteki her şey oyun içi altınla alınır.</p></details>
   <details><summary data-tr="Neden Play Store'da yok?" data-en="Why isn't it on the Play Store?">Neden Play Store'da yok?</summary><p data-tr="Bağımsız bir proje; bu yüzden APK olarak doğrudan buradan dağıtılıyor." data-en="It's an independent project, so it's distributed directly here as an APK.">Bağımsız bir proje; bu yüzden APK olarak doğrudan buradan dağıtılıyor.</p></details>
   <details><summary data-tr="İlerlemem nerede saklanıyor?" data-en="Where is my progress stored?">İlerlemem nerede saklanıyor?</summary><p data-tr="Sadece telefonunda. Uygulamayı silersen veya verilerini temizlersen ilerleme de gider; hesap gerekmez." data-en="Only on your device. Uninstalling or clearing app data erases it. No account needed.">Sadece telefonunda. Uygulamayı silersen veya verilerini temizlersen ilerleme de gider; hesap gerekmez.</p></details>
-  <details><summary data-tr="iPhone'da çalışır mı?" data-en="Does it work on iPhone?">iPhone'da çalışır mı?</summary><p data-tr="APK sadece Android içindir. iPhone'da “Tarayıcıda oyna” ile Safari'den oynayabilirsin." data-en="The APK is Android-only. On iPhone, use “Play in browser” in Safari.">APK sadece Android içindir. iPhone'da “Tarayıcıda oyna” ile Safari'den oynayabilirsin.</p></details>
+  <details><summary data-tr="iPhone'da çalışır mı?" data-en="Does it work on iPhone?">iPhone'da çalışır mı?</summary><p data-tr="APK sadece Android içindir; iPhone için sürüm yok." data-en="The APK is Android-only; there is no iPhone version.">APK sadece Android içindir; iPhone için sürüm yok.</p></details>
   <details><summary data-tr="Oyun telefonumda kasıyor." data-en="The game lags on my phone.">Oyun telefonumda kasıyor.</summary><p data-tr="Ayarlar → Grafik → Düşük seç. Oyun yavaş cihazları otomatik de algılar." data-en="Go to Settings → Graphics → Low. The game also auto-detects slow devices.">Ayarlar → Grafik → Düşük seç. Oyun yavaş cihazları otomatik de algılar.</p></details>
  </section>
  </main>
@@ -191,9 +190,8 @@ function setLang(l){
 function meta(){
  var android=/android/i.test(navigator.userAgent),ios=/iphone|ipad|ipod/i.test(navigator.userAgent);
  var s=(lang==='tr'?'Sürüm ':'Version ')+(C.version||'1.0')+' · Android 7+';
- if(ios)s=lang==='tr'?'iPhone/iPad: APK çalışmaz, “Tarayıcıda oyna”yı kullan.':'iPhone/iPad: APK won\'t install, use “Play in browser”.';
- else if(!android)s+=lang==='tr'?' · Bilgisayardaysan APK\'yı telefonuna gönder veya QR/linki telefonda aç.':' · On a computer? Send the APK to your phone or open this page on it.';
- document.getElementById('meta').textContent=s;
+ if(ios)s=lang==='tr'?'APK sadece Android cihazlarda çalışır.':'The APK only works on Android devices.';
+  document.getElementById('meta').textContent=s;
  document.getElementById('ver').textContent='v'+(C.version||'1.0');
 }
 function wire(){

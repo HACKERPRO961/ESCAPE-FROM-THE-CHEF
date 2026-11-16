@@ -13,8 +13,9 @@ Paket adı (applicationId): com.eren.escapefromthechef (yayınlandıktan sonra d
 - Full: Sprint as a cute fruit and escape the crazy chef! Run a three-lane track through four zones: the kitchen, the freezer, the dining hall and the bakery. Every zone has its own hazards: fridges, cutting boards, igniting stoves, icicles, slippery ice, flour clouds and flying knives. Never get caught by the Chef's Special! Collect coins, grab magnet, shield and double-coin power-ups, finish daily missions and unlock new fruits.
 
 ## Konsol ayarları
-- Kategori: Oyun > Aksiyon (Arcade). Hedef kitle: 13+ (çocuklara yönelik seçme; reklam kuralları sıkılaşır).
-- Reklam içerir: Evet. Veri güvenliği: reklam kimliği ve cihaz bilgisi (AdMob) paylaşılır; hesap/ödeme verisi yok.
-- Gizlilik politikası URL'si: GitHub Pages ile yayınladığın docs/privacy.html adresi.
-- Görseller: ikon 512x512 (store/icon-512.png), öne çıkan görsel 1024x500 (store/feature-graphic.png), telefondan en az 2 ekran görüntüsü.
-- Reklam: AdMob'da kendi kimliklerini al; workflow'daki ve oyundaki TEST kimliklerini değiştir.
+Tam kılavuz: `docs/PLAY_STORE.md`. Özet: Kategori Oyun > Aksiyon, hedef kitle 13+, reklam içerir, uygulama içi satın alma var.
+Görseller: store/icon-512.png, store/feature-graphic.png, store/screenshots/*.png.
+Gizlilik politikası: https://hackerpro961.github.io/ESCAPE-FROM-THE-CHEF/privacy.html
+
+## Ek açıklama satırı (uzun açıklamaya ekle)
+Karakterine özel kostümler, seviye ve rozet sistemi, haftalık sıralama, günlük görevler ve daha fazlası. Oyun ücretsizdir; reklam ve isteğe bağlı uygulama içi satın alma içerir.
