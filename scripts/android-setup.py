@@ -37,7 +37,9 @@ open(gr, 'w', encoding='utf-8').write(g)
 # Gerçek reklam kimlikleri verildiyse oyuna işle (test modu kapanır)
 h = open(www, encoding='utf-8').read()
 rid, iid = os.environ.get('ADMOB_REWARDED_ID'), os.environ.get('ADMOB_INTERSTITIAL_ID')
-if rid and iid:
+if os.environ.get('ADMOB_FORCE_TEST') == '1':
+    print('ADMOB_FORCE_TEST=1: reklam birimleri TEST (uygulama kimligi gercek)')
+elif rid and iid:
     h = h.replace('ca-app-pub-3940256099942544/5224354917', rid).replace('ca-app-pub-3940256099942544/1033173712', iid).replace('test:true', 'test:false')
     print('Gerçek AdMob kimlikleri kullanılıyor')
 else:

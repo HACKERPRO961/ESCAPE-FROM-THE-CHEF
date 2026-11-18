@@ -82,3 +82,8 @@ Her yeni yüklemede sürüm kodu artmalıdır (workflow `run_number` kullanır).
 - **Reklamlar:** Ödüllü reklamlar isteğe bağlıdır; geçiş reklamı yalnızca koşu bitiminde ve en fazla her 3. koşuda (90 sn aralıkla) çıkar. Yanlışlıkla tıklamaya yol açacak yerleşim yok.
 - Her sürümde derleme `targetSdk 36`, minimum Android 7.0 (API 24).
 - İlk GitHub derlemesi hata verirse log'u bana gönder; düzeltirim.
+
+## AdMob reklam "hazır değil" sorunu
+- Yeni açılan reklam birimleri ilk saatlerde/günlerde reklam doldurmayabilir (hata kodu 3 = no fill). Kod oyunda mesajın sonunda [kod] olarak görünür.
+- Entegrasyonu hemen doğrulamak için GitHub > Variables'a `ADMOB_FORCE_TEST` = `1` ekle ve Release AAB'yi yeniden çalıştır: uygulama kimliği gerçek kalır, birimler Google test birimi olur ve reklam hemen gelir. Gerçek yayında bu değişkeni sil.
+- AdMob > Ayarlar > Test cihazları'na kendi telefonunu ekle.
