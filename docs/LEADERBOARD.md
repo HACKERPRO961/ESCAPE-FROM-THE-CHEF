@@ -35,7 +35,7 @@ Oyundaki SKOR ekranı üç sekmedir: CİHAZ, DÜNYA, HAFTALIK. Dünya/haftalık 
 
 ## Haftalık sıralama
 - Hafta pazartesi başlar. Her koşuda o haftanın en iyi skorun `weekly/<hafta>/<kimlik>` altına yazılır.
-- Yeni hafta başlayınca oyun, geçen haftanın ilk 3'ünü kontrol eder: 1. 10 elmas, 2. 5 elmas, 3. 3 elmas (bir kez verilir).
+- Yeni hafta başlayınca oyun, geçen haftanın 1.'sini kontrol eder: 1. olan 3 elmas kazanır (bir kez verilir). Skor tablosunda yalnızca Dünya ve Haftalık sekmeleri vardır.
 
 ## Satın alımlar
 Satın alımlar artık Firebase üzerinden değil, **Google Play Faturalandırma** ile yapılır. Kurulum için `docs/PLAY_STORE.md`'ye bak.
